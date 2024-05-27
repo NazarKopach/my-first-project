@@ -2,10 +2,506 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./images/logo-favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Vyshyvanka Vibes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <h1>This si exampel project</h1>
+    <header class="page-header">
+      <div class="container page-header-container">
+        <nav class="page-nav-header">
+          <a class="page-logo-header" href="/index.html">
+            <img
+              class="page-logo-img-header"
+              src="/images/logo.svg"
+              alt="Logo"
+              width="44"
+              height="40"
+            />
+          </a>
+          <ul class="menu-header">
+            <li class="menu-item-header">
+              <a class="menu-link-header" href="#about-us">About us</a>
+            </li>
+            <li class="menu-item-header">
+              <a class="menu-link-header" href="#our-collection"
+                >Our collection</a
+              >
+            </li>
+            <li class="menu-item-header">
+              <a class="menu-link-header" href="#customer-order"
+                >Customer order</a
+              >
+            </li>
+            <li class="menu-item-header">
+              <a class="menu-link-header" href="#testimonials">Testimonials</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="page-address-header">
+          <a class="address-link-header" href="tel:+380684439426"
+            >+380 (68) 443-94-26</a
+          >
+        </address>
+        <ul class="page-header-social-list">
+          <li class="page-header-social-item">
+            <a
+              class="page-header-social-link"
+              href="https://www.facebook.com/goITclub/"
+              target="_blank"
+            >
+              <svg class="page-header-social-icons" width="28" height="28">
+                <use href="/images/svg/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="page-header-social-item">
+            <a
+              class="page-header-social-link"
+              href="https://www.instagram.com/goitclub/"
+              target="_blank"
+            >
+              <svg class="page-header-social-icons" width="28" height="28">
+                <use href="/images/svg/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="page-header-social-item">
+            <a
+              class="page-header-social-link"
+              href="https://www.youtube.com/c/GoIT"
+              target="_blank"
+            >
+              <svg class="page-header-social-icons" width="28" height="28">
+                <use href="/images/svg/symbol-defs.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <button class="mobile-open-btn" type="button">
+          <svg class="mobile-open-btn-icon">
+            <use href="/images/svg/symbol-defs.svg#icon-nav-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <!-- HERO -->
+
+      <section class="hero">
+        <div class="hero-wrap container">
+          <div>
+            <h1 class="hero-text">
+              Reviving the traditional
+              <span class="hero-text-part">Ukrainian</span> artistry in every
+              stitch.
+            </h1>
+            <a href="#order" class="hero-button"
+              >Order
+              <svg width="26" height="26">
+                <use href="/images/svg/symbol-defs.svg#icon-button-arrow"></use>
+              </svg>
+            </a>
+          </div>
+          <picture>
+            <source
+              media="(min-width:1280px)"
+              srcset="
+                /images/hero/hero-desktop1x.jpg  1x,
+                /images/hero/hero-desktop@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="
+                /images/hero/hero-tablet1x.jpg  1x,
+                /images/hero/hero-tablet@2x.jpg 2x
+              "
+            />
+            <source
+              media="(max-width:767px)"
+              srcset="
+                /images/hero/hero-mobile1x.jpg  1x,
+                /images/hero/hero-mobile@2x.jpg 2x
+              "
+            />
+            <img
+              min-width="335px"
+              height="545px"
+              src="/images/hero/hero-desktop1x.jpg"
+              alt="girl"
+              class="hero-img"
+            />
+          </picture>
+          <div class="hero-star">
+            <svg width="52" height="52">
+              <use href="/images/svg/symbol-defs.svg#icon-Star-hero"></use>
+            </svg>
+            <p class="hero-star-text">all embroidery is made by hand</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR-COLLECTION -->
+
+      <section class="section">
+        <div class="container">
+          <h2 class="collection-title" id="our-collection">Our collection</h2>
+          <ul class="collection-list">
+            <li class="collection-card">
+              <div class="collection-box">
+                <picture>
+                  <source
+                    srcset="./images/our collection/our-collection-bg-desktop1x.png 1x, ./images/our collection/our-collection-bg-desktop@2x.png 2x"
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/our collection/our-collection-bg-tablet1x.png 1x,
+                    ./images\our collection\our-collection-bg-tablet@2x.png 2x
+                  "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    class="collection-bg"
+                    src="./images/our collection/our-collection-bg-mobile.png"
+                    srcset="./images/our collection/our-collection-bg-mobile.png 1x, ./images/our collection/our-collection-bg-mobile@2x.png2x"
+                    alt="our-collection-bg"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/our collection/image1-mobile1x.jpg 1x, ./images/our collection/image1-mobile@2x.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/our collection/image1-tablet1x.jpg 1x, ./images/our collection/image1-tablet@2x.jpg 2x"
+                  />
+                  <img
+                    class="collection-img"
+                    src="./images/our collection/image1-desktop1x.jpg 1x"
+                    srcset="./images/our collection/image1-desktop1x.jpg 1x, ./images/our collection/image1-desktop@2x.jpg 2x"
+                    alt="AUGUST POLTAVA WOMEN'S BLOUSERING"
+                  />
+                </picture>
+              </div>
+
+              <div class="collection-card-card">
+                <h3 class="collection-list-title">
+                  AUGUST POLTAVA WOMEN'S BLOUSERING
+                </h3>
+                <p class="collection-list-text">3300 UAN</p>
+              </div>
+            </li>
+            <li class="collection-card">
+              <div class="collection-box">
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="./images/our collection/image2-desktop1x.jpg 1x, ./images/our collection/image2-desktop@2x.jpg 2x"
+                  />
+                  <source
+                    media="(max-width: 1280px) and (min-width: 768px)"
+                    srcset="./images/our collection/image2-tablet1x.jpg 1x, ./images/our collection/image2-tablet@2x.jpg 2x"
+                  />
+                  <img
+                    class="collection-img"
+                    src="./images/our collection/image2-mobile1x.jpg"
+                    srcset="./images/our collection/image2-mobile1x.jpg 1x, ./images/our collection/image2-mobile@2x.jpg 2x"
+                    alt="WOMEN'S BLOUSE GORGANY"
+                  />
+                </picture>
+              </div>
+              <div class="collection-card-card">
+                <h3 class="collection-list-title">WOMEN'S BLOUSE GORGANY</h3>
+                <p class="collection-list-text">3350 UAN</p>
+              </div>
+            </li>
+            <li class="collection-card">
+              <div class="collection-box">
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="./images\our collection\image3-desktop1x.jpg 1x, ./images/our collection/image3-desktop@2x.jpg 2x"
+                  />
+                  <source
+                    media="(max-width: 1280px) and (min-width: 768px)"
+                    srcset="./images\our collection\image3-tablet1x.jpg 1x, ./images\our collection\image3-tablet@2x.jpg 2x"
+                  />
+                  <img
+                    class="collection-img"
+                    src="./images/our collection/image3-mobile1x.jpg"
+                    srcset="./images/our collection/image3-mobile1x.jpg 1x, ./images/our collection/image3-mobile@2x.jpg 2x"
+                    alt="WOMEN'S BLOUSE CRIMEA"
+                  />
+                </picture>
+              </div>
+              <div class="collection-card-card">
+                <h3 class="collection-list-title">WOMEN'S BLOUSE CRIMEA</h3>
+                <p class="collection-list-text">4000 UAN</p>
+              </div>
+            </li>
+            <li class="collection-card">
+              <div class="collection-box">
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="./images/our collection/image4-desktop1x.jpg 1x, ./images/our collection/image4-desktop@2x.jpg 2x"
+                  />
+                  <source
+                    media="(max-width: 1280px) and (min-width: 768px)"
+                    srcset="./images/our collection/image4-tablet1x.jpg 1x, ./images/our collection/image4-tablet@2x.jpg 2x"
+                  />
+                  <img
+                    class="collection-img"
+                    src="./images/our collection/image4-mobile1x.jpg"
+                    srcset="./images/our collection/image4-mobile1x.jpg 1x, ./images/our collection/image4-mobile@2x.jpg 2x"
+                    alt="MEN'S SHIRT VERKHOVINA"
+                  />
+                </picture>
+              </div>
+
+              <div class="collection-card-card">
+                <h3 class="collection-list-title">MEN'S SHIRT VERKHOVINA</h3>
+                <p class="collection-list-text">3100 UAN</p>
+              </div>
+            </li>
+            <li class="collection-card">
+              <div class="collection-box">
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="./images/our collection/image5-desktop1x.jpg 1x, ./images/our collection\image5-desktop@2x.jpg 2x"
+                  />
+                  <source
+                    media="(max-width: 1280px) and (min-width: 768px)"
+                    srcset="./images/our collection/image5-tablet1x.jpg1x, ./images/our collection/image5-tablet@2x.jpg 2x"
+                  />
+                  <img
+                    class="collection-img"
+                    src="./images/our collection/image5-mobile1x.jpg"
+                    srcset="./images/our collection/image5-mobile1x.jpg 1x, ./images/our collection/image5-mobile@2x.jpg 2x"
+                    alt="MOUNTAIN MEN'S SHIRT"
+                  />
+                </picture>
+              </div>
+              <div class="collection-card-card">
+                <h3 class="collection-list-title">MOUNTAIN MEN'S SHIRT</h3>
+                <p class="collection-list-text">3300 UAN</p>
+              </div>
+            </li>
+            <li class="collection-card">
+              <div class="collection-box">
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="./images/our collection/image6-desktop1x.jpg 1x, ./images/our collection/image6-desktop@2x.jpg 2x"
+                  />
+                  <source
+                    media="(max-width: 1280px) and (min-width: 768px)"
+                    srcset="./images\our collection/image6-tablet1x.jpg 1x, ./images/our collection/image6-tablet@2x.jpg 2x"
+                  />
+                  <img
+                    class="collection-img"
+                    src="./images/our collection\image6-mobile1x.jpg"
+                    srcset="./images/our collection\image6-mobile1x.jpg 1x, ./images/our collection/image6-mobile@2x.jpg 2x"
+                    alt="MEN'S SHIRT YASEN"
+                  />
+                </picture>
+              </div>
+
+              <div class="collection-card-card">
+                <h3 class="collection-list-title">MEN'S SHIRT YASEN</h3>
+                <p class="collection-list-text">1700 UAN</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ORDER -->
+
+      <section class="order-image-bg container"></section>
+      <section class="section-order container" id="order">
+        <div class="order-content" id="customer-order">
+          <h2 class="order-text">
+            <span class="order-accent">Your order</span> is our priority:
+            Personalized approach and quality of service
+          </h2>
+          <form class="order-contacts">
+            <label for="order-name"
+              ><input
+                class="order-input"
+                type="text"
+                name="order-name"
+                id="order-name"
+                placeholder="Enter your full name"
+                required
+            /></label>
+
+            <label for="order-email">
+              <input
+                class="order-input"
+                type="email"
+                name="order-email"
+                id="order-email"
+                placeholder="Enter your email"
+                required
+              />
+            </label>
+            <textarea
+              class="order-comments"
+              name="order-comments"
+              placeholder="Comments"
+            ></textarea>
+          </form>
+
+          <button class="order-submit" type="submit">
+            Send
+            <svg class="icon-button-arrow" width="24" height="17">
+              <use href="/images/svg/symbol-defs.svg#icon-button-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="order-pictures">
+          <picture>
+            <source
+              srcset="/images/order/order-img-desktop@2x.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                /images/order/order-img-tablet1x.jpg  1x,
+                /images/order/order-img-tablet@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/images/order/order-img-desktop1x.jpg"
+              alt="order-image"
+              class="order-image"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="/images/order/order-bg-decktop@2x.png 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                /images/order/order-bg-tablet1x.png  1x,
+                /images/order/order-bg-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              class="order-bg"
+              src="/images/order/order-bg-decktop1x.png"
+              alt="order-bg"
+            />
+          </picture>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-page">
+      <div class="container footer-container">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item child-1">
+            <a class="footer-nav-link" href="#about-us">About us</a>
+          </li>
+          <li class="footer-nav-item child-2">
+            <a class="footer-nav-link" href="#our-collection">Our collection</a>
+          </li>
+          <li class="footer-nav-item child-3">
+            <a class="footer-nav-link" href="#customer-order">Customer order</a>
+          </li>
+          <li class="footer-nav-item child-4">
+            <a class="footer-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+        </ul>
+        <p class="footer-text">
+          A touch of <span class="footer-span-text">Ukrainian</span> culture in
+          every embroidery
+        </p>
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              /images/footer/footer-bg-desktop1x.png  1x,
+              /images/footer/footer-bg-desktop@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /images/footer/footer-bg-tablet1x.png  1x,
+              /images/footer/footer-bg-tablet@2x.png 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              /images/footer/footer-bg-mobile1x.png  1x,
+              /images/footer/footer-bg-mobile@2x.png 2x
+            "
+          />
+          <img
+            class="footer-picture"
+            src="/images/footer/footer-bg-desktop1x.png"
+            alt="picture"
+          />
+        </picture>
+      </div>
+    </footer>
+
+    <!-- MOBILE MENU -->
+
+    <div class="overlay-menu">
+      <div class="mobile-tab-menu">
+        <address class="mobile-tab-menu-address">
+          <a class="mobile-menu-tel" href="tel:+380684439426"
+            >+380 (68) 443-94-26
+          </a>
+        </address>
+        <button class="mobile-menu-btn-close" type="button">
+          <svg class="icon-close-mobile">
+            <use href="/images/svg/symbol-defs.svg#icon-close-menu"></use>
+          </svg>
+        </button>
+        <ul class="mobile-tab-menu-list">
+          <li class="mobile-tab-menu-items-list">
+            <a class="mobile-tab-menu-items-link" href="#about-us">About us</a>
+          </li>
+          <li class="mobile-tab-menu-items-list">
+            <a class="mobile-tab-menu-items-link" href="#our-collection"
+              >Our collection</a
+            >
+          </li>
+          <li class="mobile-tab-menu-items-list">
+            <a class="mobile-tab-menu-items-link" href="#customer-order"
+              >Customer order</a
+            >
+          </li>
+          <li class="mobile-tab-menu-items-list">
+            <a class="mobile-tab-menu-items-link" href="#testimonials"
+              >Testimonials</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
